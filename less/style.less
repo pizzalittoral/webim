@@ -1,0 +1,1087 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #74757b;
+    box-sizing: border-box;
+    .conteiner {
+        max-width: 1540px;
+        margin: 0px auto;
+    }
+    .header {
+        .hamburger {
+            display: none;
+        }
+        .headerLogo {
+            display: none;
+        }
+        .menu {
+            display: none;
+        }
+        @media all and (max-width:750px) {
+            width: 100%;
+            height: 165px;
+            background-color: #fff;
+            box-shadow: 0 10px 8px #dde6f2;
+            position: relative;
+            .headerLogo {
+                display: block;
+                margin: 0 auto;
+                padding-top: 65px;
+            }
+            .hamburger {
+                display: block;
+                position: absolute;
+                bottom: 50px;
+                left: 65px;
+                background: #ffffff;
+                .hamburgerLine1 {
+                    display: block;
+                    width: 57px;
+                    height: 5px;
+                    background: #2cd3b8;
+                    margin-bottom: 12px;
+                }
+                .hamburgerLine2 {
+                    display: block;
+                    width: 57px;
+                    height: 5px;
+                    background: #2cd3b8;
+                    margin-bottom: 12px;
+                }
+                .hamburgerLine3 {
+                    display: block;
+                    width: 57px;
+                    height: 5px;
+                    background: #2cd3b8;
+                }
+            }
+            .menu {
+                display: block;
+                width: 100%;
+                height: 350px;
+                background-color: rgb(217, 223, 223);
+                position: absolute;
+                left: 0;
+                top: 43px;
+                z-index: 5;
+                margin-top: -400px;
+                transition: all ease 1s;
+                border-radius: 0 0 5px 5px;
+                .headerNav {
+                    padding: 29px 35px;
+                    text-align: center;
+                    .headerNavItem {
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .headerNavItemLink {
+                            display: block;
+                            font-size: 24px;
+                            color: #0da088;
+                            text-decoration: underline;
+                            &:hover {
+                                color: #58bead;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-active {
+                margin-top: 120px;
+              }
+        }
+        @media all and (max-width:500px) {
+            .hamburger {
+                left: 20px;
+                bottom: 65px;
+            }
+            .headerLogo {
+                width: 200px;
+                padding-top: 50px;
+            }
+        }
+        @media all and (max-width:350px) {
+            .headerLogo {
+                width: 180px;
+                padding-top: 55px;
+            }
+            .hamburger {
+                .hamburgerLine1, .hamburgerLine2, .hamburgerLine3 {
+                    width: 45px;
+                }
+            }
+        }
+        @media all and (max-width:320px) {
+            .hamburger {
+                left: 10px;
+            }
+        }
+       .headerImg {
+           width: 100%;
+           @media all and (max-width:750px) {
+               display: none;
+           }
+       }
+    }
+    .main {
+        .mainInstallation {
+            background-color: #eff4f4;
+            padding: 80px 0px 70px 0px;
+            @media all and (max-width:750px) {
+                padding-bottom: 80px;
+            }
+            .conteiner {
+                .mainInstallationTitle {
+                    color: #393e6b;
+                    font-size: 36px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 45px;
+                    margin-left: 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 48px;
+                        text-align: left;
+                        padding-left: 70px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 43px;
+                    }
+                    @media all and (max-width:450px) {
+                        font-size: 35px;
+                        padding-left: 50px;
+                    }
+                }
+                .mainInstallationText {
+                    color: #74757b;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    margin-bottom: 60px;
+                    margin-left: 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 26px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 619px;
+                        margin-bottom: 94px;
+                        line-height: 36px;
+                    }
+                    @media all and (max-width:500px) {
+                        padding-right: 20px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 21px;
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                    }
+                }
+                .mainInstallationBtns {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-left: 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 220px;
+                    }
+                    @media all and (max-width:980px) {
+                        margin-left: 200px;
+                    }
+                    @media all and (max-width:895px) {
+                        margin-left: 175px;
+                    }
+                    @media all and (max-width:830px) {
+                        margin-left: 140px;
+                    }
+                    @media all and (max-width:780px) {
+                        display: block;
+                        max-width: 625px;
+                        margin: 0 auto;
+                    }
+                    @media all and (max-width:623px) {
+                        max-width: 500px;
+                    }
+                    @media all and (max-width:500px) {
+                        max-width: 320px;
+                    }
+                }
+                .mainInstallationBtn {
+                    display: block;
+                    width: 256px;
+                    height: 48px;
+                    border-radius: 24px;
+                    border: 1px solid #393e6b;
+                    color: #393e6b;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding-top: 16px;
+                    margin-right: 20px;
+                    @media all and (max-width:780px) {
+                        width: 624px;
+                        height: 90px;
+                        border-radius: 45px;
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                        padding-top: 38px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    @media all and (max-width:623px) {
+                        width: 500px;
+                    }
+                    @media all and (max-width:500px) {
+                        width: 320px;
+                        height: 70px;
+                        font-size: 19px;
+                        padding-top: 26px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover, &:focus {
+                        background-color: #2cd3b8;
+                        color: #ffffff;
+                        border: none;
+                    }
+                    &:active {
+                        box-shadow: 0px 0px 10px #969393;
+                    }
+                }
+                .active {
+                    background-color: #2cd3b8;
+                    color: #ffffff;
+                    border: none;
+                }
+            }
+        }
+        .mainSimpleInstall {
+            padding: 75px 0px 90px;
+            @media all and (max-width:750px) {
+                padding: 100px 0px 90px;
+            }
+            .conteiner {
+                .mainSimpleInstallTitle {
+                    color: #393e6b;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.75px;
+                    margin-left: 260px;
+                    margin-bottom: 30px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 48px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 310px;
+                        margin-bottom: 60px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 43px;
+                    }
+                    @media all and (max-width:450px) {
+                        font-size: 35px;
+                        padding-left: 50px;
+                    }
+                }
+                .mainSimpleInstallText {
+                    color: #74757b;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    margin-left: 260px;
+                    margin-bottom: 85px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 26px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 565px;
+                        line-height: 36px;
+                        margin-bottom: 114px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 21px;   
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                    }
+                }
+                .mainSimpleInstallWrapper {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-left: 215px;
+                    @media all and (max-width:450px) {
+                        flex-direction: column;
+                    }
+                    @media all and (max-width:830px) {
+                        margin-left: 150px;
+                    }
+                    @media all and (max-width:750px) {
+                        margin-left: 60px;
+                    }
+                    .mainSimpleInstallWrapperRegistration, .mainSimpleInstallWrapperHtml {
+                        .WrapperNum {
+                            opacity: 0.15;
+                            color: #393e6b;
+                            font-size: 150px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            font-weight: 700;
+                            letter-spacing: 3.75px;
+                        }
+                        .WrapperIcon {
+                            position: relative;
+                            left: 45px;
+                            bottom: 25px;
+                            font-size: 50px;
+                        }
+                        .WrapperLink {
+                            display: block;
+                            color: #0da088;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-decoration: underline;
+                            letter-spacing: 0.45px;
+                            margin-left: 50px;
+                            margin-top: 22px;
+                            @media all and (max-width:750px) {
+                                font-size: 26px;
+                                max-width: 140px;
+                            }
+                            @media all and (max-width:500px) {
+                                font-size: 21px;
+                            }
+                            &:hover {
+                                color: #58bead;
+                            }
+                        }
+                    }
+                    .mainSimpleInstallWrapperHtml {
+                        margin-left: 100px;
+                        @media all and (max-width:539px) {
+                            margin-left: 20px;
+                        }
+                        @media all and (max-width:450px) {
+                            margin-top: 65px;
+                        }
+                    }
+                }
+            }
+        }
+        .mainHtml {
+            background-color: #eff4f4;
+            padding: 90px 0px;
+            @media all and (max-width:750px) {
+                padding: 90px 0px 53px 0px;
+            }
+            .conteiner {
+                .mainHtmlTitle {
+                    color: #393e6b;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.75px;
+                    margin: 0px 0px 70px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        text-align: left;
+                        font-size: 48px;
+                        max-width: 370px;
+                        padding-left: 70px;
+                        margin-bottom: 60px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 43px;
+                    }
+                    @media all and (max-width:450px) {
+                        font-size: 35px;
+                        padding-left: 50px;
+                    }
+                }
+                .mainItem {
+                    position: relative;
+                    @media all and (max-width:320px) {
+                        padding-right: 40px;
+                    }
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        background-color: #3b4269;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 260px;
+                        top: 10px;
+                        @media all and (max-width:1082px) {
+                            left: 185px;
+                        }
+                        @media all and (max-width:980px) {
+                            left: 170px;
+                        }
+                        @media all and (max-width:830px) {
+                            left: 75px;
+                        }
+                        @media all and (max-width:450px) {
+                            left: 50px;
+                        }
+                    }
+                    .mainItemLink {
+                        display: block;
+                        color: #0da088;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-decoration: underline;
+                        margin: 0 0 15px 300px;
+                        @media all and (max-width:1082px) {
+                            margin-left: 220px;
+                        }
+                        @media all and (max-width:980px) {
+                            margin-left: 200px;
+                        }
+                        @media all and (max-width:830px) {
+                            margin-left: 110px;
+                        }
+                        @media all and (max-width:750px) {
+                            font-size: 30px;
+                            max-width: 407px;
+                            margin-bottom: 35px;
+                        }
+                        @media all and (max-width:500px) {
+                            font-size: 26px;
+                            margin-left: 95px;
+                        }
+                        @media all and (max-width:450px) {
+                            margin-left: 70px;
+                        }
+                        &:hover {
+                            color: #58bead;
+                        }
+                    }
+                    .mainItemText {
+                        color: #74757b;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin: 0 0 46px 300px;
+                        @media all and (max-width:1082px) {
+                            margin-left: 220px;
+                        }
+                        @media all and (max-width:980px) {
+                            max-width: 695px;
+                            margin-left: 200px;
+                        }
+                        @media all and (max-width:895px) {
+                            max-width: 500px;
+                        }
+                        @media all and (max-width:830px) {
+                            margin-left: 110px;
+                        }
+                        @media all and (max-width:750px) {
+                            max-width: 514px;
+                            font-size: 24px;
+                        }
+                        @media all and (max-width:500px) {
+                            font-size: 21px;
+                            margin-left: 95px;
+                        }
+                        @media all and (max-width:450px) {
+                            margin-left: 70px;
+                        }
+                        .ItemTextBold {
+                            font-size: 16px;
+                            font-weight: 700;
+                            @media all and (max-width:750px) {
+                                font-size: 24px;
+                            }
+                            @media all and (max-width:500px) {
+                                font-size: 21px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .mainDashboard {
+            padding-bottom: 37px;
+            .conteiner {
+                .mainDashboardTitle {
+                    color: #393e6b;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.75px;
+                    margin: 85px 0px 35px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 48px;
+                        margin: 95px 0px 60px 70px;
+                        text-align: left;
+                        max-width: 641px;
+                        line-height: 50px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 43px;
+                    }
+                    @media all and (max-width:450px) {
+                        font-size: 35px;
+                        margin-left: 50px;
+                    }
+                    @media all and (max-width:320px) {
+                        font-size: 32px;
+                        line-height: 35px;
+                        margin-left: 40px;
+                    }
+                }
+                .mainDashboardSubtitle {
+                    color: #74757b;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    margin: 0px 0px 75px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 24px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 566px;
+                        margin-bottom: 90px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 21px;   
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                    }
+                    @media all and (max-width:320px) {
+                        padding-left: 40px;
+                    }
+                }
+                .mainItem {
+                    position: relative;
+                    @media all and (max-width:320px) {
+                        padding-right: 40px;
+                    }
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        background-color: #3b4269;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 260px;
+                        top: 10px;
+                        @media all and (max-width:1082px) {
+                            left: 196px;
+                        }
+                        @media all and (max-width:980px) {
+                            left: 170px;
+                        }
+                        @media all and (max-width:830px) {
+                            left: 75px;
+                        }
+                        @media all and (max-width:450px) {
+                            left: 50px;
+                        }
+                    }
+                    .mainItemLink {
+                        display: block;
+                        color: #0da088;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-decoration: underline;
+                        margin: 0 0 15px 300px;
+                        @media all and (max-width:1082px) {
+                            margin-left: 220px;
+                        }
+                        @media all and (max-width:980px) {
+                            margin-left: 200px;
+                        }
+                        @media all and (max-width:830px) {
+                            margin-left: 110px;
+                        }
+                        @media all and (max-width:750px) {
+                            font-size: 30px;
+                            max-width: 426px;
+                            margin-bottom: 40px;
+                        }
+                        @media all and (max-width:500px) {
+                            font-size: 26px;
+                            margin-left: 95px;
+                        }
+                        @media all and (max-width:450px) {
+                            margin-left: 70px;
+                        }
+                        &:hover {
+                            color: #58bead;
+                        }
+                    }
+                    .mainItemText {
+                        color: #74757b;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin: 0 0 46px 300px;
+                        @media all and (max-width:1082px) {
+                            margin-left: 220px;
+                        }
+                        @media all and (max-width:980px) {
+                            max-width: 695px;
+                            margin-left: 200px;
+                        }
+                        @media all and (max-width:895px) {
+                            max-width: 500px;
+                        }
+                        @media all and (max-width:830px) {
+                            margin-left: 110px;
+                        }
+                        @media all and (max-width:750px) {
+                            max-width: 381px;
+                            font-size: 24px;
+                            max-width: 560px;
+                        }
+                        @media all and (max-width:500px) {
+                            font-size: 21px;
+                            margin-left: 95px;
+                        }
+                        @media all and (max-width:450px) {
+                            margin-left: 70px;
+                        }
+                        .ItemTextBold {
+                            font-size: 16px;
+                            font-weight: 700;
+                            @media all and (max-width:750px) {
+                                font-size: 24px;
+                                font-weight: 400;
+                            }
+                            @media all and (max-width:500px) {
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mainAfterinstall {
+            background-color: #eff4f4;
+            padding: 75px 0px 70px 0px;
+            @media all and (max-width:750px) {
+                padding: 90px 0px 100px 0px;
+            }
+            .conteiner {
+                .mainAfterinstallTitle {
+                    color: #393e6b;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.75px;
+                    margin: 0px 0px 25px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 48px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 562px;
+                        margin-bottom: 55px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 43px;
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                        font-size: 35px;
+                    }
+                }
+                .mainAfterinstallSubtitle {
+                    color: #74757b;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    margin: 0px 0px 65px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        font-size: 24px;
+                        text-align: left;
+                        padding-left: 70px;
+                        max-width: 561px;
+                        margin-bottom: 80px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 21px;
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                    }
+                }
+                .mainAfterinstallList {
+                    margin: 0px 0px 75px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 220px;
+                    }
+                    @media all and (max-width:980px) {
+                        margin-left: 200px;
+                    }
+                    @media all and (max-width:895px) {
+                        margin-left: 150px;
+                    }
+                    @media all and (max-width:830px) {
+                        margin-left: 100px;
+                    }
+                    @media all and (max-width:780px) {
+                        margin: 0px 0px 100px 70px;
+                    }
+                    @media all and (max-width:450px) {
+                        margin-left: 50px;
+                    }
+                    @media all and (max-width:350px) {
+                        margin-left: 0;
+                    }
+                    .mainAfterinstallListItem {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        @media all and (max-width:750px) {
+                            margin-bottom: 40px;
+                        }
+                        @media all and (max-width:350px) {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .ListItemImg {
+                            margin-right: 35px;
+                            @media all and (max-width:750px) {
+                                margin-right: 45px;
+                            }
+                            @media all and (max-width:350px) {
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .ListItemText {
+                            font-size: 18px;
+                            font-weight: 400;
+                            @media all and (max-width:750px) {
+                                font-size: 24px;
+                                max-width: 392px;
+                            }
+                            @media all and (max-width:500px) {
+                                font-size: 21px;
+                            }
+                            @media all and (max-width:350px) {
+                            }
+                            .ListItemBold {
+                                font-size: 24px;
+                                font-weight: 700;
+                                margin-right: 10px;
+                                color: #393e6b;
+                                @media all and (max-width:500px) {
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mainAfterinstallBtns {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 220px;
+                    }
+                    @media all and (max-width:980px) {
+                        margin-left: 200px;
+                    }
+                    @media all and (max-width:895px) {
+                        margin-left: 150px;
+                    }
+                    @media all and (max-width:830px) {
+                        margin-left: 125px;
+                    }
+                    @media all and (max-width:780px) {
+                        display: block;
+                        max-width: 624px;
+                        margin: 0 auto; 
+                    }
+                    @media all and (max-width:623px) {
+                        max-width: 500px;
+                    }
+                    @media all and (max-width:500px) {
+                        max-width: 320px;
+                    }
+                    .mainAfterinstallBtn {
+                        display: block;
+                        width: 276px;
+                        height: 48px;
+                        border-radius: 24px;
+                        background-color: #3b4269;
+                        margin-right: 20px;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-align: center;
+                        padding-top: 17px;
+                        @media all and (max-width:780px) {
+                            width: 624px;
+                            height: 90px;
+                            border-radius: 45px;
+                            font-size: 24px;
+                            padding-top: 35px;
+                            margin-bottom: 30px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @media all and (max-width:623px) {
+                            width: 500px;
+                            margin-right: 0;
+                        }
+                        @media all and (max-width:500px) {
+                            max-width: 320px;
+                            height: 70px;
+                            font-size: 19px;
+                            padding-top: 26px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &:hover, &:focus {
+                            background-color: #2cd3b8;
+                        }
+                        &:active {
+                            box-shadow: 0px 0px 10px #969393;
+                        }
+                    }
+                    .active {
+                        background-color: #2cd3b8;
+                    }
+                }
+            }
+        }
+        .mainChannels {
+            padding: 65px 0px 75px;
+            @media all and (max-width:750px) {
+                padding: 90px 0px 60px;
+            }
+            .conteiner {
+                .mainChannelsText {
+                    color: #393e6b;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    max-width: 646px;
+                    margin: 0px 0px 75px 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 0px;
+                        text-align: center;
+                    }
+                    @media all and (max-width:750px) {
+                        text-align: left;
+                        padding-left: 70px;
+                        font-size: 24px;
+                        max-width: 610px;
+                        margin-bottom: 80px;
+                    }
+                    @media all and (max-width:500px) {
+                        font-size: 21px;   
+                    }
+                    @media all and (max-width:450px) {
+                        padding-left: 50px;
+                    }
+                }
+                .mainChannelsWrapper {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    max-width: 970px;
+                    margin-left: 260px;
+                    @media all and (max-width:1082px) {
+                        margin-left: 220px;
+                    }
+                    @media all and (max-width:980px) {
+                        margin-left: 200px;
+                    }
+                    @media all and (max-width:895px) {
+                        margin-left: 130px;
+                    }
+                    @media all and (max-width:780px) {
+                        flex-direction: column;
+                        margin-left: 70px;
+                        align-items: flex-start;
+                    }
+                    @media all and (max-width:450px) {
+                        margin-left: 50px;
+                    }
+                    .mainChannelsWrapperItem {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 27px;
+                        &:nth-child(1) {
+                            margin-right: 135px;
+                        }
+                        &:nth-child(2) {
+                            margin-right: 85px;
+                            @media all and (max-width:923px) {
+                                margin-right: 0;
+                            }
+                        }
+                        @media all and (max-width:1227px) {
+                            &:nth-child(3) {
+                                margin-left: 2px;
+                                margin-right: 82px;
+                            }
+                        }
+                        @media all and (max-width:923px) {
+                            &:nth-child(3) {
+                                margin-right: 81px;
+                            }
+                        }
+                        @media all and (max-width:780px) {
+                            &:nth-child(3) {
+                                margin-left: 2px;
+                            }
+                        }
+                        @media all and (max-width:750px) {
+                            margin-bottom: 45px;
+                        }
+                        &:nth-child(4) {
+                            margin-left: -4px;
+                            margin-right: 165px;
+                            @media all and (max-width:923px) {
+                                margin-right: 0;
+                            }
+                        }
+                        &:nth-child(5) {
+                            margin-left: -7px;
+                            margin-right: 150px;
+                            @media all and (max-width:1227px) {
+                                margin-right: 158px;
+                            }
+                            @media all and (max-width:1082px) {
+                                margin-right: 157px;
+                            }
+                            @media all and (max-width:1041px) {
+                                margin-right: 156px;
+                            }
+                            @media all and (max-width:780px) {
+                                margin-left: -4px;
+                            }
+                        }
+                        &:nth-child(6) {
+                            margin-left: -11px;
+                            @media all and (max-width:1227px) {
+                                margin-right: 241px;
+                            }
+                            @media all and (max-width:1041px) {
+                                margin-right: 97px;
+                            }
+                            @media all and (max-width:923px) {
+                                margin-right: 0;
+                            }
+                            @media all and (max-width:895px) {
+                                margin-right: 41px;
+                            }
+                            @media all and (max-width:780px) {
+                                margin-left: -4px;
+                            }
+                        }
+                        &:nth-child(7) {
+                            margin-left: -8px;
+                            @media all and (max-width:1227px) {
+                                margin-left: -13px;
+                            }
+                            @media all and (max-width:780px) {
+                                margin-left: -10px;
+                            }
+                        }
+                        .mainChannelsWrapperItemIcon {
+                            margin-right: 30px;
+                            font-size: 40px;
+                            @media all and (max-width:500px) {
+                                font-size: 30px;
+                            }
+                        }
+                        .mainChannelsWrapperItemLink {
+                            display: block;
+                            color: #0da088;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            text-decoration: underline;
+                            @media all and (max-width:750px) {
+                                font-size: 24px;
+                            }
+                            @media all and (max-width:500px) {
+                                font-size: 21px;
+                            }
+                            &:hover {
+                                color: #58bead;
+                            }
+                        }
+                        .indent {
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .footerImg {
+            width: 100%;
+            @media all and (max-width:750px) {
+                display: none;
+            }
+        }
+        .footerBg {
+            display: none;
+            @media all and (max-width:750px) {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}
